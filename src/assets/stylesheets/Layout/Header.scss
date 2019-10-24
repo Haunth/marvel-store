@@ -1,0 +1,114 @@
+$colorMain: #de3737cc;
+.el-container {
+  display: block;
+
+  .header__top {
+    display: flex;
+    align-items: center;
+    background: url(../../assets/images/bg-header.png);
+
+    .header__top--left {
+      width: 30%;
+      color: #ffffff;
+      transition: all 0.3s;
+      &:hover {
+        color: $colorMain;
+      }
+
+      i {
+        padding: 0 10px;
+      }
+    }
+
+    .header__top--right {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #ffffff;
+
+      .el-link {
+        padding: 0 15px;
+        color: #ffffff;
+        transition: all 0.3s;
+        &:hover {
+          color: $colorMain;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .header__main{
+    display: flex;
+    align-items: center;
+    background: #262626;
+    .header__main--logo{
+      width: 30%;
+      cursor: pointer;
+      img{
+        max-width: 100%;
+      }
+    }
+    .header__main--search{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .el-form{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .el-input{
+          width: 60%;
+        }
+        .el-button{
+          color: #ffffff;
+          margin-left: 10px;
+          background-color: $colorMain;
+          border-color: $colorMain;
+          &:hover{
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+    .header__main--cart{
+      width: 20%;
+      color: #ffffff;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      i{
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+          color: $colorMain;
+        }
+      }
+    }
+  }
+  .header__menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $colorMain;
+    padding: 0;
+    .el-link{
+      padding: 0 25px;
+      font-size: 18px;
+      color: #ffffff;
+      height: 60px;
+      transition: all 0.4s;
+      &::after{
+        display: none;
+      }
+      &:hover{
+        background: #262626;
+        color: $colorMain;
+      }
+    }
+  }
+}

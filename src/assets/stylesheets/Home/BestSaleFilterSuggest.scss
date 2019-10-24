@@ -1,0 +1,153 @@
+$colorMain: #de3737cc;
+  .main__section {
+    margin-top: 50px;
+    .main__product {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .one__product {
+        width: 25%;
+        box-sizing: border-box;
+        padding-left: 25px;
+        padding-right: 25px;
+      .main__section--product {
+        box-shadow: 0 12px 12px 0 rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 12px 12px 0 rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 0 12px 12px 0 rgba(0, 0, 0, .1);
+        background: #ffffff;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        .top__product {
+          position: relative;
+          width: 100%;
+          height: 350px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+          .dropdown__product {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 350px;
+            text-align: center;
+            transition: all 0.4s;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            .btn-hover {
+              width: 100%;
+              .btn {
+                width: 70%;
+                transition: all 0.4s;
+                border-color: transparent;
+                text-transform: uppercase;
+                font-size: 15px;
+                padding: 14px 20px !important;
+              }
+              .view-detail {
+                background: $colorMain;
+                color: #ffffff;
+                &:hover {
+                  background: transparent;
+                  border-color: $colorMain;
+                  color: $colorMain;
+                }
+              }
+            }
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+        .info__product{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+          padding: 0 10px;
+          .info__product--left{
+            width: 70%;
+            .name--product{
+              cursor: pointer;
+              font-size: 15px;
+              text-transform: uppercase;
+              text-align: left;
+              font-weight: bold;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              display: block;
+              transition: all 0.3s;
+              &:hover{
+                color: $colorMain;
+              }
+            }
+            .price{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin:10px 0;
+              .price__buy{
+                color: $colorMain;
+              }
+              .price__main{
+                &.status-1{
+                  display: none;
+                }
+                text-decoration: line-through;
+              }
+            }
+          }
+          .info__product--right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn--cart{
+              border-color: $colorMain;
+              transition: all 0.4s;
+              padding: 10px 18px;
+              i{
+                color: $colorMain;
+                font-size: 25px;
+                transition: all 0.4s;
+              }
+              &:hover{
+                border-color: $colorMain;
+                background-color: $colorMain;
+                color: #ffffff;
+              }
+              &:hover i{
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+    h2 {
+      padding: 0 20px;
+      display: flex;
+      justify-content: flex-end;
+      .el-link {
+        font-size: 18px;
+        color: $colorMain;
+        transition: all 0.3s;
+        &:hover {
+          color: #000;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
